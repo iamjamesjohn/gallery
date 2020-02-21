@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  Main container  */
+#container {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-color: tomato;
+}
+/* Content style */
+#content {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+/* Showcase */
+#showcase {
+    width: 50%;
+    height: auto;
+    padding: 25px;
+}
+#showcase img {
+    width: 100%;
+    height: auto;
+}
+#showcase #notes {
+    background-color: white;
+    padding: 25px;
+    margin: 10px 0;
+}
+#showcase #notes ol {
+    padding: 10px 20px;
+}
+#showcase #notes ol li {
+    padding: 5px 0;
+}
+/* form */
+#form {
+    width: 50%;
+    height: auto;
+    padding: 25px;
+}
+#form form {
+
+}
+#form label {
+    font-size: 20px;
+}
+#form .flex-row {
+    display: flex;
+}
+#form .input-row {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 10px;
+}
+#form .input-row select {
+    padding: 10px;
+    font-size: 16px;
+}
+#form .input-row select:focus {
+    outline: none;
+}
+/* Thumbnails */
+#thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+#thumbnails img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+    #showcase, #form {
+        width: 100%;
+    }
+}

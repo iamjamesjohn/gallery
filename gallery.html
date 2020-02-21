@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Stylesheet for page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- main page container -->
+    <div id="container">
+        <!-- Content. Display image + form -->
+        <div id="content">
+            <!-- Container for the showcase image -->
+            <div id="showcase">
+                <!-- Image elemant for the showcase thumbnail -->
+                <img src="flower.jpg" alt="flowers" id="showcaseThumbnail">
+                <div id="notes">
+                    <p>How to use</p>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- Form container -->
+            <div id="form">
+                <!-- Form -->
+                <form action="">
+                    <!-- Flex row for responsivness -->
+                    <div class="flex-row">
+                        <!-- Input row container -->
+                        <div class="input-row">
+                            <!-- Label for select -->
+                            <label for="">Page background colour</label>
+                            <!-- Background colour selector -->
+                            <select name="bgSelect" id="bgSelect">
+                                <option value="tomato" selected>Tomato</option>
+                                <option value="red">Red</option>
+                                <option value="white">White</option>
+                                <option value="black">Black</option>
+                            </select>
+                        </div>
+                        <!-- Input row container -->
+                        <div class="input-row">
+                            <!-- Label for select -->
+                            <label for="">Page text colour</label>
+                            <!-- Text colour selector -->
+                            <select name="textSelect" id="textSelect">
+                                <option value="black" selected>Black</option> 
+                                <option value="red">Red</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <!-- List of thumbnails -->
+                <div id="thumbnails">
+                    <!-- Change thumbnail src to what thumbnails you want -->
+                    <img src="flower.jpg" alt="flowers" class="thumbnail">
+                    <img src="flower.jpg" alt="flowers" class="thumbnail">
+                    <img src="flower.jpg" alt="flowers" class="thumbnail">
+                    <img src="flower.jpg" alt="flowers" class="thumbnail">
+                    <img src="fitness.jpg" alt="flowers" class="thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for page -->
+    <script src="main.js"></script>
+
+</body>
+</html>
